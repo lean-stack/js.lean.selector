@@ -1,0 +1,14 @@
+{
+  "undef": true,
+  "browser": true,
+  "globals": {
+    // Jasmine
+    "describe": true,
+    "it": true,
+    "expect": true,
+    "beforeEach": true,
+    
+    // Lean
+    "lean": true
+  } 
+}

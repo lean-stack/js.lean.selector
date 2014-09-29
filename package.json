@@ -1,0 +1,44 @@
+{
+  "name": "lean.selector",
+  "version": "0.0.0",
+  "description": "a lean javascript CSS selector engine",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-bump": "^0.1.11",
+    "gulp-concat": "^2.4.1",
+    "gulp-git": "^0.5.1",
+    "gulp-header": "^1.1.1",
+    "gulp-jscs": "^1.1.2",
+    "gulp-jshint": "^1.8.4",
+    "gulp-uglifyjs": "^0.4.3",
+    "jshint-stylish": "^1.0.0",
+    "karma": "^0.12.23",
+    "karma-html2js-preprocessor": "^0.1.0",
+    "karma-jasmine": "^0.1.5",
+    "karma-mocha-reporter": "^0.3.1",
+    "karma-phantomjs-launcher": "^0.1.4"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lean-stack/js.lean.selector.git"
+  },
+  "keywords": [
+    "javascript",
+    "css",
+    "selector"
+  ],
+  "author": "Michael Alt <lean@michael-alt.info>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lean-stack/js.lean.selector/issues"
+  },
+  "homepage": "https://github.com/lean-stack/js.lean.selector"
+}
