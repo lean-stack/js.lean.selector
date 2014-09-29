@@ -55,13 +55,13 @@ gulp.task('test', function(done) {
 
 gulp.task('bump:patch', function() {
   return gulp.src(['./package.json', './bower.json'])
-    .pipe(bump({type: 'patch'}))
+    .pipe(bump())
     .pipe(gulp.dest('./'));
 });
 
 gulp.task('bump:feature', function() {
   return gulp.src(['./package.json', './bower.json'])
-    .pipe(bump({type: 'feature'}))
+    .pipe(bump({type: 'minor'}))
     .pipe(gulp.dest('./'));
 });
 
