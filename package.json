@@ -9,9 +9,7 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.8.8",
-    "gulp-bump": "^0.1.11",
     "gulp-concat": "^2.4.1",
-    "gulp-git": "^0.5.1",
     "gulp-header": "^1.1.1",
     "gulp-jscs": "^1.1.2",
     "gulp-jshint": "^1.8.4",

@@ -2,9 +2,7 @@
 
 var gulp = require('gulp');
 
-var bump = require('gulp-bump');
 var concat = require('gulp-concat');
-var git = require('gulp-git');
 var header = require('gulp-header');
 var jscs = require('gulp-jscs');
 var jshint = require('gulp-jshint');
@@ -51,28 +49,4 @@ gulp.task('test', function(done) {
     configFile: __dirname + '/test/karma.conf.js',
     singleRun: true
   }, done);
-});
-
-gulp.task('bump:patch', function() {
-  return gulp.src(['./package.json', './bower.json'])
-    .pipe(bump())
-    .pipe(gulp.dest('./'));
-});
-
-gulp.task('bump:feature', function() {
-  return gulp.src(['./package.json', './bower.json'])
-    .pipe(bump({type: 'minor'}))
-    .pipe(gulp.dest('./'));
-});
-
-gulp.task('release', function() {
-  var pkg = require('./package.json');
-  var v = 'v' + pkg.version;
-  var message = 'Release ' + v;
-
-  return gulp.src('./')
-    .pipe(git.commit(message))
-    .pipe(git.tag(pkg.version, v))
-    .pipe(git.push('origin', 'master', '--tags'))
-    .pipe(gulp.dest('./'));
 });
