@@ -4,7 +4,6 @@ var gulp = require('gulp');
 
 var concat = require('gulp-concat');
 var header = require('gulp-header');
-var jscs = require('gulp-jscs');
 var jshint = require('gulp-jshint');
 var uglify = require('gulp-uglifyjs');
 
@@ -12,11 +11,6 @@ var pkg = require('./package.json');
 var banner = '/*! <%= pkg.name %> v<%= pkg.version %> ' +
              '| (c) 2014 Michael Alt ' +
              'http://lean-stack.github.io/license.txt */\n';
-
-gulp.task('js-style', function() {
-  return gulp.src(['./gulpfile.js', './src/**/*.js', './test/**/*.js'])
-    .pipe(jscs());
-});
 
 gulp.task('js-lint', function() {
   return gulp.src(['./gulpfile.js', './src/**/*.js', './test/**/*.js'])
@@ -35,7 +29,7 @@ gulp.task('compress', function() {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('build', ['js-lint', 'js-style']);
+gulp.task('build', ['js-lint']);
 
 gulp.task('dist', ['compress'], function() {
   return gulp.src('./src/**/*.js')
