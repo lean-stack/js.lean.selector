@@ -1,1 +1,4 @@
-## Project: Lean CSS Selector Engine
+js.lean.selector
+================
+
+Lean JavaScript CSS selector engine
