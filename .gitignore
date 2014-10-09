@@ -1,3 +1,5 @@
-# npm dependencies
-/node_modules/
+# Dependency directory
+node_modules
 
+# IDE properties
+.idea

@@ -13,7 +13,7 @@ var banner = '/*! <%= pkg.name %> v<%= pkg.version %> ' +
              'http://lean-stack.github.io/license.txt */\n';
 
 gulp.task('js-lint', function() {
-  return gulp.src(['./gulpfile.js', './src/**/*.js', './test/**/*.js'])
+  return gulp.src('./src/**/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'))
     .pipe(jshint.reporter('fail'));
