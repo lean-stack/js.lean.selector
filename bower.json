@@ -1,0 +1,27 @@
+{
+  "name": "lean.selector",
+  "version": "0.2.0",
+  "homepage": "https://github.com/lean-stack/js.lean.selector",
+  "authors": [
+    "Michael Alt <lean@michael-alt.info>"
+  ],
+  "description": "Lean JavaScript CSS Selector Engine",
+  "main": "dist/lean.selector.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "javascript",
+    "css",
+    "selector"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}
