@@ -41,4 +41,4 @@ var lean = (function(window, module) {
   module.cq = cq;
   return module;
 
-}(window, lean || {}));
+}(this, lean || {}));
