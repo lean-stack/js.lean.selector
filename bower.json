@@ -1,6 +1,6 @@
 {
   "name": "lean.selector",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/lean-stack/js.lean.selector",
   "authors": [
     "Michael Alt <lean@michael-alt.info>"
@@ -20,6 +20,9 @@
   "license": "ISC",
   "ignore": [
     "**/.*",
+    "src",
+    "package.json",
+    "gulpfile.js",
     "node_modules",
     "bower_components",
     "test"
