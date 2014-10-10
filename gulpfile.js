@@ -40,7 +40,7 @@ gulp.task('dist', ['compress'], function() {
 gulp.task('test', function(done) {
   var karma = require('karma').server;
   karma.start({
-    configFile: __dirname + '/test/karma.conf.js',
+    configFile: __dirname + '/test/lean.js/karma.conf.js',
     singleRun: true
   }, done);
 });

@@ -1,7 +1,7 @@
 describe('Lean selector', function() {
 
   beforeEach(function() {
-    document.body.innerHTML = window.__html__['test/fixtures.html'];
+    document.body.innerHTML = window.__html__['test/lean.js/fixtures.html'];
   });
 
   describe('with single ID selector', function() {
