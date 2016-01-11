@@ -1,0 +1,32 @@
+{
+  "name": "lean.selector",
+  "version": "0.3.0",
+  "description": "Lean JavaScript CSS Selector Engine",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://lean-stack@github.com/lean-stack/js.lean.selector.git"
+  },
+  "keywords": [
+    "javascript",
+    "css",
+    "selector-engine"
+  ],
+  "author": "Micha Alt <mail@lean-stack.de>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lean-stack/js.lean.selector/issues"
+  },
+  "homepage": "https://github.com/lean-stack/js.lean.selector#readme",
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "jasmine-jquery": "^2.1.1",
+    "jquery": "^2.2.0"
+  }
+}

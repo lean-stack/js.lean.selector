@@ -1,7 +1,9 @@
+jasmine.getFixtures().fixturesPath = 'fixtures';
+
 describe('Lean selector', function() {
 
   beforeEach(function() {
-    document.body.innerHTML = window.__html__['tests/lean.js/fixtures.html'];
+    loadFixtures('fixtures.html')
   });
 
   describe('with single ID selector', function() {
