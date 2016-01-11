@@ -45,7 +45,7 @@
     if ((simpleQuery = rSimpleQuery.exec(selector)) !== null) {
 
       if (typeof (simpleQuery[1]) !== 'undefined') {
-        return context.getElementById(simpleQuery[1]);
+        return document.getElementById(simpleQuery[1]);
       }
       if (typeof (simpleQuery[2]) !== 'undefined') {
         return context.getElementsByTagName(simpleQuery[2]);

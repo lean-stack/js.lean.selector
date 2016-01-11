@@ -16,6 +16,10 @@ describe('Lean selector', function() {
     it('should give null on unknown id.', function() {
       expect(lean.cq('#unknown')).toBeNull();
     });
+    it('should handle given context (ignoring)', function() {
+      expect(lean.cq('#pageHeader', document.body))
+          .toBe(document.getElementById('pageHeader'));
+    });
   });
 
   describe('with single CLASS selector', function() {
